@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Копирование объектов и ссылки</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container"></div>
+        </header> <!-- header -->
+
+        <main class="main">
+            <div class="heading container">
+                <h1 class="title">Копирование объектов и ссылки</h1>
+            </div> <!-- heading -->
+            <div class="text container">
+                <p class="paragraph">
+                    Объекты присваиваются и копируются по ссылке. Другими словами, переменная хранит не
+                    «значение объекта», а «ссылку»
+                    (адрес в памяти) на это значение. Поэтому копирование такой переменной или передача её в качестве
+                    аргумента функции
+                    приводит к копированию этой ссылки, а не самого объекта.
+                </p>
+                <p class="paragraph">
+                    Все операции с использованием скопированных ссылок (например, добавление или удаление свойств)
+                    выполняются с одним и тем
+                    же объектом.
+                </p>
+                <p class="paragraph">
+                    Для «простого клонирования» объекта можно использовать <span>Object.assign</span>. Необходимо помнить, что
+                    <span>Object.assign</span> не делает
+                    глубокое клонирование объекта. Если внутри копируемого объекта есть свойство, значение которого не
+                    является примитивом,
+                    оно будет передано по ссылке. Для создания «настоящей копии» (полного клона объекта) можно
+                    воспользоваться методом из
+                    сторонней JavaScript-библиотеки _.cloneDeep(obj).
+                </p>
+            </div>
+        </main> <!-- main -->
+
+        <footer class="footer">
+            <div class="footer__container"></div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+
+    <!-- Скрипты -->
+    <script src="index.js"></script>
+</body>
+
+</html>

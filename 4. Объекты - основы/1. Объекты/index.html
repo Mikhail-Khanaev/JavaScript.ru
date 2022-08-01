@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объекты</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container"></div>
+        </header> <!-- header -->
+
+        <main class="main">
+            <div class="heading container">
+                <h1 class="title">Объекты</h1>
+            </div> <!-- heading -->
+            <div class="text container">
+                <p class="paragraph">Объекты – это ассоциативные массивы с рядом дополнительных возможностей.</p>
+
+                <h4 class="title__list">Они хранят свойства (пары ключ-значение), где:</h4>
+                <ul class="list">
+                    <li>Ключи свойств должны быть строками или символами (обычно строками).</li>
+                    <li>Значения могут быть любого типа.</li>
+                </ul>
+
+                <h4 class="title__list">Чтобы получить доступ к свойству, мы можем использовать:</h4>
+                <ul class="list">
+                    <li>Запись через точку: <span>obj.property</span></li>
+                    <li>Квадратные скобки <span>obj["property"]</span>. Квадратные скобки позволяют взять ключ из
+                        переменной,
+                        например, <span>obj[varWithKey]</span></li>
+                </ul>
+
+                <h4 class="title__list">Дополнительные операторы:</h4>
+                <ul class="list">
+                    <li>Удаление свойства: <span>delete obj.prop</span></li>
+                    <li>Проверка существования свойства: <span>"key" in obj</span></li>
+                    <li>Перебор свойств объекта: цикл <span>for for (let key in obj)</span>.</li>
+                </ul>
+                <h4 class="title__list">То, что мы изучали в этой главе, называется «простым объектом» («plain object»)
+                    или просто <span>Object.</span></h4>
+                <h4 class="title__list">В JavaScript есть много других типов объектов:</h4>
+                <ul class="list">
+                    <li><span>Array</span> для хранения упорядоченных коллекций данных,</li>
+                    <li><span>Date</span> для хранения информации о дате и времени,</li>
+                    <li><span>Error</span> для хранения информации об ошибке.</li>
+                    <li>… и так далее.</li>
+                </ul>
+                <p class="paragraph">
+                    У них есть свои особенности, которые мы изучим позже. Иногда люди говорят что-то
+                    вроде «тип данных Array» или «тип
+                    данных Date», но формально они не являются отдельными типами, а относятся к типу данных
+                    <span>Object.</span> Они
+                    лишь расширяют его различными способами.
+                </p>
+
+                <p class="paragraph">
+                    Объекты в JavaScript очень мощные. Здесь мы только немного углубились в
+                    действительно огромную тему. Мы будем плотно
+                    работать с объектами и узнаем о них больше в следующих частях учебника.
+                </p>
+            </div>
+        </main> <!-- main -->
+
+        <footer class="footer">
+            <div class="footer__container"></div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+
+    <!-- Скрипты -->
+    <script src="index.js"></script>
+</body>
+
+</html>

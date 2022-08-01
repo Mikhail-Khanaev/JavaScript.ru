@@ -1,0 +1,2 @@
+let salaries={John:100,Pete:300,Mary:250},keys=Object.keys(Object.fromEntries(Object.entries(salaries)));function count(e){return и,Object.keys(e).length}let user={name:"John",age:30};alert(count(user));
+//# sourceMappingURL=script.js.map

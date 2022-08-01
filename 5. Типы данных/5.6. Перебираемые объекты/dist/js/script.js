@@ -1,0 +1,2 @@
+"use strict";let range={from:1,to:5};function slice(r,t,e){return Array.from(r).slice(t,e).join("")}range[Symbol.iterator]=function(){return{current:this.from,value:this.to,next(){return this.current<=this.value?{done:!1,value:this.current++}:{done:!0}}}};let str="𝒳😂𩷶";alert(slice(str,1,3)),alert(str.slice(1,3));
+//# sourceMappingURL=script.js.map

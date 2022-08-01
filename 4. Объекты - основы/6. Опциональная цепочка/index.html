@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опциональная цепочка '?.'</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container"></div>
+        </header> <!-- header -->
+
+        <main class="main">
+            <div class="heading container">
+                <h1 class="title">Опциональная цепочка '?.'</h1>
+            </div> <!-- heading -->
+            <div class="text container">
+                <p class="paragraph">Синтаксис опциональной цепочки ?. имеет три формы:</p>
+                <ul class="list">
+                    <li>obj?.prop – возвращает obj.prop если obj существует, в противном случае undefined.</li>
+                    <li>obj?.[prop] – возвращает obj[prop] если obj существует, в противном случае undefined.</li>
+                    <li>obj.method?.() – вызывает obj.method(), если obj.method существует, в противном случае
+                        возвращает undefined.</li>
+                </ul>
+                <p class="paragraph">Как мы видим, все они просты и понятны в использовании. ?. проверяет левую часть на
+                    null/undefined и позволяет
+                    продолжить вычисление, если это не так.</p>
+                <p class="paragraph">Цепочка ?. позволяет безопасно получать доступ к вложенным свойствам.</p>
+                <p class="paragraph">Тем не менее, мы должны использовать ?. осторожно, только там, где по логике кода
+                    допустимо, что левая часть не
+                    существует. Чтобы он не скрывал от нас ошибки программирования, если они возникнут.</p>
+            </div>
+        </main> <!-- main -->
+
+        <footer class="footer">
+            <div class="footer__container"></div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+
+    <!-- Скрипты -->
+    <script src="index.js"></script>
+</body>
+
+</html>

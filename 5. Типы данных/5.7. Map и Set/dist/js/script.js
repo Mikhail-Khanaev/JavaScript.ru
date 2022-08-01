@@ -1,0 +1,2 @@
+function unique(e){return Array.from(new Set(e))}let values=["Hare","Krishna","Hare","Krishna","Krishna","Krishna","Hare","Hare",":-O"];function aclean(e){for(let r=0;r<e.length;r++)for(let a=r+1;a<e.length;a++)e[r].toLowerCase().split("").sort().join("")===e[a].toLowerCase().split("").sort().join("")&&e.splice(a,1);return e}let arr=["nap","teachers","cheaters","PAN","ear","era","hectares"];alert(aclean(arr));
+//# sourceMappingURL=script.js.map

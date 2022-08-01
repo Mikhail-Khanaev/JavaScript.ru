@@ -1,0 +1,2 @@
+let now=new Date;function formatDate(e){let t=new Date-e;if(t<1e3)return"прямо сейчас";let n=Math.floor(t/1e3);if(n<60)return n+" сек. назад";let r=Math.floor(t/6e4);if(r<60)return r+" мин. назад";let a=e;return a=["0"+a.getDate(),"0"+(a.getMonth()+1),""+a.getFullYear(),"0"+a.getHours(),"0"+a.getMinutes()].map((e=>e.slice(-2))),a.slice(0,3).join(".")+" "+a.slice(3).join(":")}alert(formatDate(new Date(new Date-3e5)));
+//# sourceMappingURL=script.js.map

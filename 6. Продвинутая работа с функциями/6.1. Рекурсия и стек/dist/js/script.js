@@ -1,0 +1,2 @@
+function sumTo(f){return 1==f?f:f+sumTo(f-1)}function fac(f){return 1==f?f:f*fac(f-1)}function fib(f){return f<=1?f:fib(f-1)+fib(f-2)}alert(sumTo(100)),alert(fac(5)),alert(fib(5));
+//# sourceMappingURL=script.js.map

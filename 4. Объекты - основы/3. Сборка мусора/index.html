@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборка мусора</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container"></div>
+        </header> <!-- header -->
+
+        <main class="main">
+            <div class="heading container">
+                <h1 class="title">Сборка мусора</h1>
+            </div> <!-- heading -->
+            <div class="text container">
+                <h4 class="title__list">Главное из того, что мы узнали</h4>
+                <ul class="list">
+                    <li>Сборка мусора выполняется автоматически. Мы не можем ускорить или предотвратить её.</li>
+                    <li>Объекты сохраняются в памяти, пока они достижимы.</li>
+                    <li>Наличие ссылки не гарантирует, что объект достижим (от корня): несколько взаимосвязанных
+                        объектов могут стать
+                        недостижимыми как единое целое.</li>
+                </ul>
+                <p class="paragraph">
+                    Современные интерпретаторы реализуют передовые алгоритмы сборки мусора.
+                </p>
+                <p class="paragraph">
+                    Некоторые из них освещены в книге «The Garbage Collection Handbook: The Art of Automatic Memory
+                    Management» (R. Jones и
+                    др.).
+                </p>
+                <p class="paragraph">
+                    Если вы знакомы с низкоуровневым программированием, то более подробная информация о сборщике мусора
+                    интерпретатора V8
+                    находится в статье A tour of V8: Garbage Collection.
+                </p>
+                <p class="paragraph">
+                    Также в блоге интерпретатора V8 время от времени публикуются статьи об изменениях в управлении
+                    памятью. Разумеется,
+                    чтобы изучить сборку мусора, вам необходимо понимать, как устроен внутри интерпретатор V8 в целом.
+                    Об этом вы можете
+                    почитать в блоге Вячеслава Егорова, одного из инженеров, разрабатывавших V8. Я говорю про «V8»,
+                    потому что он лучше
+                    всего освещён статьями в интернете. В других интерпретаторах многие подходы схожи, но сборка мусора
+                    во многих аспектах
+                    отличается.
+                </p>
+                <p class="paragraph">
+                    Глубокое понимание работы интерпретаторов необходимо, когда вам нужны
+                    низкоуровневые оптимизации. Было бы разумно
+                    запланировать их изучение как следующий шаг после освоения языка.
+                </p>
+            </div>
+        </main> <!-- main -->
+
+        <footer class="footer">
+            <div class="footer__container"></div>
+        </footer> <!-- footer -->
+    </div> <!-- wrapper -->
+
+    <!-- Скрипты -->
+    <script src="index.js"></script>
+</body>
+
+</html>

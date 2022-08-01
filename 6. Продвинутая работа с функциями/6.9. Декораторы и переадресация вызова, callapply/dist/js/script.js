@@ -1,0 +1,2 @@
+let worker={slow:(t,r)=>(alert(`Called with ${t},${r}`),t+r)};function cachingDecorator(t,r){let l=new Map;return function(n){let e=r(arguments);if(l.has(e))return l.get(e);let o=t.call(this,...arguments);return l.set(e,o),o}}function hash(t){return t[0]+","+t[1]}function work(t,r){alert(t+r)}function spy(t){function r(...l){return r.calls.push(l),t.apply(this,arguments)}return r.calls=[],r}(work=spy(work))(1,2),work(4,5);for(let t of work.calls)alert("call:"+t.join());
+//# sourceMappingURL=script.js.map

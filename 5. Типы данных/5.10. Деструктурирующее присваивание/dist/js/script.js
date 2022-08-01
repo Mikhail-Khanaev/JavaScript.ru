@@ -1,0 +1,2 @@
+let user={name:"John",years:30},{name:name,years:age,isAdmin:isAdmin=!1}=user;function topSalary(e){let r=0,t="",n=Object.entries(e);for(let[e,a]of n)a>r&&(r=a,t=e);return`${t} получает ${r}$`}let salaries={John:100,Pete:300,Mary:250};function codewars(e){let r=e.join("");for(let e=0;e<r.length;e++)if(r.charCodeAt(e)!=r.charCodeAt(e+1)-1)return String.fromCharCode(r.charCodeAt(e)+1);return null}alert(codewars(["O","Q","R","S"]));
+//# sourceMappingURL=script.js.map
