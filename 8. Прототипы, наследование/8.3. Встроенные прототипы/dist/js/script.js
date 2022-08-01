@@ -1,2 +1,2 @@
-
+console.log("Встроенные прототипы");let obj={},now=new Date;function f(){alert("Hello!")}function f(t,e){alert(t+e)}String.prototype.show=function(){alert(this)},Function.prototype.defer=function(){setTimeout(this,1e3)},Function.prototype.defer=function(t){let e=this;return function(...o){setTimeout((()=>e.apply(this,o)),t)}},f.defer(1e3)(1,2);
 //# sourceMappingURL=script.js.map
