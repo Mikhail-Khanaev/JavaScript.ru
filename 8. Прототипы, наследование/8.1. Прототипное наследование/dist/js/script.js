@@ -1,2 +1,2 @@
-console.log("Прототипное наследование");
+console.log("Прототипное наследование");let head={glasses:1},table={__proto__:head,pen:3},bed={__proto__:table,sheet:1,pillow:2},pockets={money:2e3,__proto__:bed},hamster={eat(e){this.stomach=[e]}},speedy={__proto__:hamster},lazy={__proto__:hamster};speedy.eat("apple"),alert(speedy.stomach),alert(lazy.stomach);
 //# sourceMappingURL=script.js.map
